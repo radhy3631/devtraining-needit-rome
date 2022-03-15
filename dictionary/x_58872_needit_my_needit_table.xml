@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="My NeedIt Table" max_length="40" name="x_58872_needit_my_needit_table" type="collection">
+        <element label="New field 2" mandatory="true" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Requested type" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Ressources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Informatique" sequence="3" value="info"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Ressource 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Ressource 2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Facilities1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Legal1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Legal2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Informatique1" sequence="6" value="info1"/>
+                <element inactive_on_update="false" label="Informatique2" sequence="7" value="infoe2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_5" type="glide_date_time"/>
+        <element label="New Integer" max_length="40" name="u_integer_2" type="integer"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+    </element>
+</database>
